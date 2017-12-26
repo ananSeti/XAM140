@@ -4,12 +4,13 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	x:Class="TipCalculator.StandardTipPage"
 	Title="15%">
-
+    
 	<Page.Resources>
 		<ResourceDictionary>
 			<Color x:Key="bgColor">White</Color>
 			<Color x:Key="fgColor">Black</Color>
-		</ResourceDictionary>
+           
+        </ResourceDictionary>
 	</Page.Resources>
 	
 	<Grid x:Name ="LayoutRoot" BackgroundColor="{DynamicResource bgColor}" Padding="10">
@@ -28,7 +29,7 @@
 		</Grid.RowDefinitions>
 
 		<!-- Left column = static labels -->
-		<Label x:Name="billLabel"  Text="Bill"  TextColor="{DynamicResource fgColor}" FontSize="22" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" />
+		<Label  x:Name="billLabel"  Text="Bill" TextColor="{DynamicResource fgColor}"  Style="{StaticResource infoLabelStyle}" Grid.Row="0" Grid.Column="0" />
 		<Label x:Name="tipLabel"   Text="Tip"   TextColor="{DynamicResource fgColor}" FontSize="22" FontAttributes="Bold" Grid.Row="1" Grid.Column="0" />
 		<Label x:Name="totalLabel" Text="Total" TextColor="{DynamicResource fgColor}" FontSize="22" FontAttributes="Bold" Grid.Row="2" Grid.Column="0" />
 
